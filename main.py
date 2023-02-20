@@ -63,9 +63,8 @@ def saisi_mdp():
             print(verif)
         else:
             print("le mot de pass est valide ")
-            break
-
-saisi_mdp()
+            mot_de_passe = hashpasswrd(mdp)
+            return mot_de_passe
 
 # RECUPERATION DU NOM DE L'UTILISATEUR + VERIFICATION ET AJOUT DANS LE DOSSIER JSON
 
